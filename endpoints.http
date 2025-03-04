@@ -9,6 +9,9 @@ GET {{baseUrl}}/api/v1/todos
 ### Get a specific Todo
 GET {{baseUrl}}/api/v1/todos/1
 
+###
+GET {{baseUrl}}/api/v1/todos?completed=true
+
 ### Create a Todo
 POST {{baseUrl}}/api/v1/todos
 Content-Type: application/json
@@ -16,7 +19,7 @@ Content-Type: application/json
 {
     "title": "Test Todo",
     "description": "This is a test todo",
-    "completed": false
+    "completed": true
 }
 
 ### Update a Todo
@@ -28,4 +31,4 @@ Content-Type: application/json
 }
 
 ### Delete a Todo
-DELETE {{baseUrl}}/api/v1/todos/1
+DELETE {{baseUrl}}/api/v1/todos/7
